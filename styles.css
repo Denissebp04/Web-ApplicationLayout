@@ -220,3 +220,84 @@ button{
 #list-container li.checked::before{
     background-image: url('bx-checkbox-checked.svg');
 }
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(226, 117, 164),#d4799a);
+
+}
+
+
+.dates{
+    width: 450px;
+    background-color: rgb(235, 139, 180);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px;
+}
+
+.dates header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+header .currentdate{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+header .icons img{
+    height: 38px;
+    width: 38px;
+    color: #333;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    line-height: 38px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+header .icons img:hover{
+    background-color: #d4799a;
+}
+
+header .icons img:last-child{
+    margin-right: -10px;
+
+}
+.calendar{
+    padding: 20px;
+}
+
+.calendar ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.calendar .days{
+    margin-bottom: 20px;
+}
+
+.calendar .weeks li{
+    font-weight: 500;
+}
+
+.calendar .days li{
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.calendar ul li{
+    width: calc(100% / 7);
+}
+
+.dates h2{
+    text-align: center;
+    font-size: 40px;
+}
