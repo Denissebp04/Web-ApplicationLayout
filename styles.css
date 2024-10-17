@@ -1,5 +1,8 @@
 /* @import url() */
 
+body{
+    background: linear-gradient(135deg, rgb(226, 117, 164),#d4799a);
+}
 
 .container-fluid{
     background-color: rgb(241, 126, 155);
@@ -9,6 +12,7 @@
     display: flex;
     background: linear-gradient(135deg, rgb(226, 117, 164),#d4799a);
 }
+
 
 .main-img{
    background-image: url("https://img.freepik.com/premium-photo/sky-wallpaper-calming-clouds-stars-colorful-sunny-airy-relaxing-serene-peaceful_962751-1686.jpg");
