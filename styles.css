@@ -325,3 +325,66 @@ header .icons img:last-child{
     text-align: center;
     font-size: 40px;
 }
+
+#dropdown{
+    /* min-width: 15em; */
+    position: relative;
+    /* margin: 2em; */
+}
+
+#dropdown *{
+    box-sizing: border-box;
+}
+
+.select{
+    background: #d4799a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.select-clicked{
+    border: 2px white solid;
+    box-shadow: 0 0 0.8em white;
+}
+
+/* .caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid white;
+    transition: 0.3s;
+} */
+
+ #sub-menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    text-align: center;
+    background: rgb(241, 126, 155);
+    border: 1px rgb(235, 159, 178) solid;
+    box-shadow: 0 0.5em 1em pink;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    z-index: 1;
+ }
+
+ #sub-menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+ }
+
+ .submenu-open{
+    display: block;
+    opacity: 1;
+ }
+

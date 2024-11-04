@@ -41,7 +41,8 @@
     </nav>
     <div class="main">
 <div class = "main-img">
-    "Motivational Quote"
+   <p id="quotes">"Motivational Quote"</p>
+   <h3 id="author"> xuyg</h3>
 
 </div>
 
@@ -74,3 +75,17 @@
 </body>
 </html>
 
+<script>
+    const quote = document.getElementById('quotes')
+    const author = document.getElementById('author')
+    let retrieveQuotes = () =>{
+        fetch("https://quotes-api-self.vercel.app/quote")
+        .then(data => data.json())
+        .then((item) => {
+            quote.innerText = item.quote
+            author.innerText = item.author
+        })
+    }
+    window.addEventListener("load", retrieveQuotes)
+
+</script>
